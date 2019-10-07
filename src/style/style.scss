@@ -1,0 +1,233 @@
+$pink: #ec0050;
+$row-bg: #eaeaea;
+
+.margin-xsmall {
+  margin: 5px;
+
+  &-bottom {
+    margin-bottom: 5px;
+  }
+
+  &-left {
+    margin-left: 5px;
+  }
+
+  &-right {
+    margin-right: 5px;
+  }
+
+  &-top {
+    margin-top: 5px;
+  }
+}
+
+.margin-small {
+  margin: 15px;
+
+  &-bottom {
+    margin-bottom: 15px;
+  }
+
+  &-left {
+    margin-left: 15px;
+  }
+
+  &-right {
+    margin-right: 15px;
+  }
+
+  &-top {
+    margin-top: 15px;
+  }
+}
+
+.margin-big {
+  margin: 30px;
+
+  &-bottom {
+    margin-bottom: 30px;
+  }
+
+  &-left {
+    margin-left: 30px;
+  }
+
+  &-right {
+    margin-right: 30px;
+  }
+
+  &-top {
+    margin-top: 30px;
+  }
+}
+
+.clearfix {
+  clear: both;
+  height: 0;
+}
+
+
+.card-container {
+  min-height: 500px;
+  margin: auto;
+  width: 260px;
+  box-shadow: 7px 10px 30px 5px rgba(192, 192, 192, .8);
+}
+
+.graphic-info {
+  min-height: 75px;
+  width: auto;
+  padding: 10px;
+}
+
+.stats-info {
+  background-color: $pink;
+  padding: 10px 5px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.player-image {
+  height: 175px;
+  margin-bottom: -4px;
+}
+
+#name,
+#position {
+  color: #fff;
+  padding-left: 5px;
+}
+
+.row {
+  background-color: $row-bg;
+  display: block;
+  width: 90%;
+  margin: 1px auto;
+  padding: 0 5px;
+  height: 30px;
+
+  p {
+    color: #502053;
+    line-height: 30px;
+    margin: 3px;
+  }
+
+  span {
+    float: right;
+    color: #502053;
+    font-weight: 900;
+  }
+}
+
+.drop-down {
+  background-color: $row-bg;
+  width: 90%;
+  height: 30px;
+  padding: 0 5px;
+  margin: auto;
+  display: block;
+
+  p {
+    color: #575757;
+    line-height: 30px;
+  }
+}
+
+.club-logo {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  position: absolute;
+  bottom: -50px;
+  right: 15px;
+}
+
+.tottenham-hotspur-logo,
+.manchester-united-logo,
+.manchester-city-logo,
+.arsenal-logo,
+.leicester-city-logo  {
+  background-image: url('./images/badges_sprite.png');
+  background-repeat: no-repeat;
+  width: 100px;
+  border-radius: 50px;
+  background-size: 130vw;
+  mix-blend-mode: multiply;
+}
+
+.leicester-city-logo {
+  height: 97px;
+  background-position: 4px 4px;
+}
+
+.tottenham-hotspur-logo {
+  height: 97px;
+  background-position: -459px -926px;
+}
+
+.manchester-united-logo {
+  height: 95px;
+  background-position: -551px -740px;
+}
+
+.manchester-city-logo {
+  height: 96px;
+  background-position: -737px -645px;
+}
+
+.arsenal-logo {
+  height: 97px;
+  background-position: -90px -88px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .card-container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .image-container {
+    height: 35%;
+  }
+
+  .stats-info {
+    height: 46%;
+  }
+
+  .player-image {
+    height: 210px;
+  }
+
+  .tottenham-hotspur-logo,
+  .manchester-united-logo,
+  .manchester-city-logo,
+  .arsenal-logo,
+  .leicester-city-logo  {
+    background-size: 275vw;
+  }
+
+  .tottenham-hotspur-logo {
+    background-position: -453px -918px;
+  }
+
+  .manchester-united-logo {
+    background-position: -544px -730px;
+  }
+
+  .manchester-city-logo {
+    background-position: -729px -638px;
+  }
+
+  .arsenal-logo {
+    background-position: -88px -88px;
+  }
+
+  .leicester-city-logo {
+    background-position: 6px 4px;
+  }
+
+}

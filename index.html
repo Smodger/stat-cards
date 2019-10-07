@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stat Card</title>
+
+    <link rel="stylesheet" href="public/style.css">
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="graphic-info">
+        <select id="drop-down" class="drop-down">
+           <option value="" disabled selected>Select a player...</option>
+        </select>
+      </div>
+      <div class="image-container">
+        <img id="player" class="player-image"></img>
+        <div class="club-logo">
+          <div id="emblem"></div>
+        </div>
+      </div>
+      <div class="stats-info">
+
+        <h4 class="margin-xsmall" id="name"></h4>
+        <p class="margin-small-bottom margin-xsmall-left" id="position"></p>
+
+        <div class="row">
+          <p>Appearances <span id="stat-apps"></span></p>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+          <p>Goals <span id="stat-goals"></span></p>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+          <p>Assists <span id="stat-assists"></span></p>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+          <p>Goals per match <span id="stat-gpm"></span></p>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="row">
+          <p>Passes per minute <span id='stat-ppm'></span></p>
+          <div class="clearfix"></div>
+        </div>
+
+      </div>
+    </div>
+    <script src="public/main.js"></script>
+  </body>
+</html>
